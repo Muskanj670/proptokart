@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSVDBB94BF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RSVDBB94BF');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script>
+    (function (w, d) {
+      w.CollectId = "661117960f95c58c78ec3b4b";
+      var h = d.head || d.getElementsByTagName("head")[0];
+      var s = d.createElement("script");
+      s.setAttribute("type", "text/javascript");
+      s.async = true;
+      s.setAttribute("src", "https://collectcdn.com/launcher.js");
+      h.appendChild(s);
+    })(window, document);
+  </script>
+  <link rel="stylesheet" href="proptokart_css/icons.css" />
+  <style>
+    #chat-bot-launcher-container.chat-bot-launcher-center {
+      position: fixed !important;
+      bottom: 31vh !important;
+      right: 4px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="icons">
+    <div id="move-to-top" class="move-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <div id="whatsapp-chat" class="loaded">
+      <a href="https://wa.me/+91 724 860 5408" target="_blank">
+        <img src="images/image.png" alt="WhatsApp Chat" />
+      </a>
+    </div>
+    <div id="dialog-box">
+      <p>Let's chat on WhatsApp!</p>
+    </div>
+
+    <div id="insta-chat" class="loaded">
+      <a href="https://www.instagram.com/proptokart/?hl=en" target="_blank">
+        <img src="images/insta- G.png" alt="Instagram Chat" />
+      </a>
+    </div>
+
+    <div id="facebook-chat" class="loaded">
+      <a href="https://www.facebook.com/people/proptokart/100086011914020/?mibextid=ZbWKwL" target="_blank">
+        <img src="images/facebook-G.png" alt="Facebook Chat" />
+      </a>
+    </div>
+
+    <div id="youtube-chat" class="loaded">
+      <a href="https://www.youtube.com/channel/UC3wLL1czpFgbQSwKqQjznSg" target="_blank">
+        <img src="images/Youtube - G.png" alt="Youtube Chat" />
+      </a>
+    </div>
+  </div>
+  <script>
+    // Function to show the dialog box for 5 seconds
+    function showDialogBox() {
+      var dialogBox = document.getElementById("dialog-box");
+      dialogBox.style.display = "block";
+      setTimeout(function () {
+        dialogBox.style.display = "none";
+      }, 5000); // Hide after 5 seconds
+    }
+
+    // Add class "loaded" after page load and show the dialog box
+    window.addEventListener("load", function () {
+      document.getElementById("whatsapp-chat").classList.add("loaded");
+      showDialogBox();
+    });
+
+    // Show the dialog box when the chat button is hovered
+    document
+      .getElementById("whatsapp-chat")
+      .addEventListener("mouseenter", function () {
+        showDialogBox();
+      });
+
+    // Add class "loaded" after page load and show the dialog box
+    window.addEventListener("load", function () {
+      document.getElementById("insta-chat").classList.add("loaded");
+      showDialogBox();
+    });
+
+    // Show the dialog box when the chat button is hovered
+    document
+      .getElementById("insta-chat")
+      .addEventListener("mouseenter", function () {
+        showDialogBox();
+      });
+    // Add class "loaded" after page load and show the dialog box
+    window.addEventListener("load", function () {
+      document.getElementById("facebook-chat").classList.add("loaded");
+      showDialogBox();
+    });
+
+    // Show the dialog box when the chat button is hovered
+    document
+      .getElementById("facebook-chat")
+      .addEventListener("mouseenter", function () {
+        showDialogBox();
+      });
+    // Add class "loaded" after page load and show the dialog box
+    window.addEventListener("load", function () {
+      document.getElementById("youtube-chat").classList.add("loaded");
+      showDialogBox();
+    });
+
+    // Show the dialog box when the chat button is hovered
+    document
+      .getElementById("youtube-chat")
+      .addEventListener("mouseenter", function () {
+        showDialogBox();
+      });
+
+    // ----------------------------move to top -----------------------
+    window.addEventListener("scroll", function () {
+      var moveButton = document.getElementById("move-to-top");
+      if (window.scrollY > 100) {
+        // Adjust the scroll threshold as needed
+        moveButton.style.display = "block";
+      } else {
+        moveButton.style.display = "none";
+      }
+    });
+
+    document
+      .getElementById("move-to-top")
+      .addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+  </script>
+</body>
+
+</html>
